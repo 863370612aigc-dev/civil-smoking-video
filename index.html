@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#12382d" />
+    <meta name="description" content="文明吸烟环境宣传片——规范吸烟行为，共享清新环境。" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="文明吸烟环境宣传片" />
+    <meta property="og:description" content="规范吸烟行为，共享清新环境。" />
+    <meta property="og:image" content="poster.jpg" />
+    <title>文明吸烟环境宣传片</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="poster.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="route-line" aria-hidden="true"></div>
+
+      <header class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">PUBLIC ENVIRONMENT · 45 SEC</p>
+        <h1 id="page-title">文明吸烟<br /><span>环境宣传片</span></h1>
+        <p class="lead">规范吸烟行为，共享清新环境</p>
+      </header>
+
+      <section class="watch-section" aria-label="视频播放区">
+        <div class="video-frame">
+          <video
+            id="promo-video"
+            controls
+            playsinline
+            webkit-playsinline="true"
+            preload="metadata"
+            poster="poster.jpg"
+            aria-label="播放文明吸烟环境宣传片"
+          >
+            <source src="video.mp4" type="video/mp4" />
+            您的浏览器暂不支持视频播放，请使用手机系统浏览器打开。
+          </video>
+
+          <button class="play-button" id="play-button" type="button" aria-label="开始播放宣传片">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span>点击观看</span>
+          </button>
+        </div>
+
+        <div class="watch-meta">
+          <div>
+            <p class="meta-label">建议</p>
+            <p>打开声音观看完整内容</p>
+          </div>
+          <button class="share-button" id="share-button" type="button">分享给他人</button>
+        </div>
+        <p class="status-message" id="status-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <footer class="footer">
+        <span>文明有界</span>
+        <i aria-hidden="true"></i>
+        <span>清新共享</span>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
